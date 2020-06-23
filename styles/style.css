@@ -4,6 +4,21 @@
 body {
   color: #333;
   margin: 10px;
-  padding: 5px; }
+  padding: 10px; }
+
+.row div {
+  background-color: lightblue;
+  padding: 20px;
+  border: 1px solid black;
+  border-collapse: collapse; }
+
+nav div {
+  padding: 20px; }
+nav a, nav a:hover {
+  color: inherit;
+  text-decoration: inherit; }
+nav a:hover {
+  color: cadetblue;
+  font-size: 1.1em; }
 
 /*# sourceMappingURL=style.css.map */
