@@ -1,5 +1,8 @@
 $font-stack: Arial, Helvetica, sans-serif;
 $primary-font-color: #333;
+$primary-margin: 10px;
+$primary-padding: 10px;
+$div-padding: 20px;
 
 * {
     font-family: $font-stack;     
@@ -7,6 +10,32 @@ $primary-font-color: #333;
 
 body {
     color: $primary-font-color;
-    margin: 10px; 
-    padding: 5px;
+    margin: $primary-margin; 
+    padding: $primary-padding;
 }
+
+.row {    
+    div {
+        background-color: lightblue ;
+        padding: $div-padding;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+}
+
+nav {
+    div {
+        padding: $div-padding;
+    }
+    a, a:hover{
+        color: inherit; 
+        text-decoration: inherit; 
+    }
+    a:hover{
+        color: cadetblue; 
+        font-size: 1.1em;      
+    }
+}
+
+
+
