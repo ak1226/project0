@@ -1,15 +1,16 @@
 $font-stack: Arial, Helvetica, sans-serif;
-$primary-font-color: #333;
+$primary-color: #333;
 $primary-margin: 10px;
 $primary-padding: 10px;
 $div-padding: 20px;
+$footer-padding: 20px;
 
 * {
     font-family: $font-stack;     
 }
 
 body {
-    color: $primary-font-color;
+    color: $primary-color;
 }
 
 .navbar-nav {
@@ -23,6 +24,15 @@ body {
 .jumbotron {
     margin-bottom: 0px;
 }
+
+footer {
+    padding: $footer-padding;
+    .footer-text {
+        padding-top: $footer-padding;
+    }
+}
+
+
 
 
 
