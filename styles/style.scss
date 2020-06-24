@@ -10,31 +10,18 @@ $div-padding: 20px;
 
 body {
     color: $primary-font-color;
-    margin: $primary-margin; 
-    padding: $primary-padding;
 }
 
-.row {    
-    div {
-        background-color: lightblue ;
-        padding: $div-padding;
-        border: 1px solid black;
-        border-collapse: collapse;
+.navbar-nav {
+    .nav-item {
+        .nav-link:hover{
+            color: rgb(255, 255, 255);      
+        }
     }
 }
 
-nav {
-    div {
-        padding: $div-padding;
-    }
-    a, a:hover{
-        color: inherit; 
-        text-decoration: inherit; 
-    }
-    a:hover{
-        color: cadetblue; 
-        font-size: 1.1em;      
-    }
+.jumbotron {
+    margin-bottom: 0px;
 }
 
 

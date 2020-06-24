@@ -2,23 +2,12 @@
   font-family: Arial, Helvetica, sans-serif; }
 
 body {
-  color: #333;
-  margin: 10px;
-  padding: 10px; }
+  color: #333; }
 
-.row div {
-  background-color: lightblue;
-  padding: 20px;
-  border: 1px solid black;
-  border-collapse: collapse; }
+.navbar-nav .nav-item .nav-link:hover {
+  color: white; }
 
-nav div {
-  padding: 20px; }
-nav a, nav a:hover {
-  color: inherit;
-  text-decoration: inherit; }
-nav a:hover {
-  color: cadetblue;
-  font-size: 1.1em; }
+.jumbotron {
+  margin-bottom: 0px; }
 
 /*# sourceMappingURL=style.css.map */
