@@ -1,5 +1,8 @@
 $font-stack: Arial, Helvetica, sans-serif;
-$primary-color: #333;
+$primary-color: rgb(48, 41, 47);
+$secondary-color: rgb(201, 197, 253);
+$tertiary-colour: rgb(65, 63, 84);
+$light-color: #E8E9F3;
 $primary-margin: 10px;
 $primary-padding: 10px;
 $div-padding: 20px;
@@ -10,22 +13,30 @@ $footer-padding: 20px;
 }
 
 body {
-    color: $primary-color;
+    color: $tertiary-colour;
 }
 
-.navbar-nav {
-    .nav-item {
-        .nav-link:hover{
-            color: rgb(255, 255, 255);      
-        }
+.bg-dark-custom {
+    background-color: $primary-color;
+}
+
+.navbar {
+    background-color: $primary-color;
+    .navbar-brand, .nav-link, .navbar-toggler-icon{
+        color: $light-color;      
     }
+    .nav-link:hover{
+        color: $secondary-color;      
+    } 
 }
 
 .jumbotron {
-    margin-bottom: 0px;
+    background-color: $tertiary-colour;
+    color: $light-color;
 }
 
 footer {
+    background-color: $tertiary-colour;
     padding: $footer-padding;
     .footer-text {
         padding-top: $footer-padding;

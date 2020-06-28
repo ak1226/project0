@@ -1,18 +1,38 @@
 * {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
-  color: #333; }
+  color: #413f54;
+}
 
-.navbar-nav .nav-item .nav-link:hover {
-  color: white; }
+.bg-dark-custom {
+  background-color: #30292f;
+}
+
+.navbar {
+  background-color: #30292f;
+}
+
+.navbar .navbar-brand, .navbar .nav-link, .navbar .navbar-toggler-icon {
+  color: #E8E9F3;
+}
+
+.navbar .nav-link:hover {
+  color: #c9c5fd;
+}
 
 .jumbotron {
-  margin-bottom: 0px; }
+  background-color: #413f54;
+  color: #E8E9F3;
+}
 
 footer {
-  padding: 20px; }
-  footer .footer-text {
-    padding-top: 20px; }
+  background-color: #413f54;
+  padding: 20px;
+}
 
+footer .footer-text {
+  padding-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
