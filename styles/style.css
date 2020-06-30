@@ -3,36 +3,154 @@
 }
 
 body {
-  color: #413f54;
+  color: #30292f;
 }
 
-.bg-dark-custom {
-  background-color: #30292f;
+header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
 }
 
 .navbar {
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.navbar .navbar-brand {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #30292f;
+}
+
+.navbar .nav-item {
+  margin-left: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+  color: #b7b7b9;
+  padding: 5px 15px;
+  border-bottom: 0.05rem solid #30292f;
+}
+
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+  color: #30292f;
+  font-weight: 550;
+  border-bottom: 0.15rem solid #30292f;
+}
+
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+  color: #30292f;
+  font-weight: 550;
+  border-bottom: 0.15rem solid #30292f;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  color: #fff;
+  border-radius: 0;
+  outline: none;
+}
+
+.navbar-collapse {
+  background: #fff;
+}
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url(../images/tiger.png);
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0 200px;
+  color: #30292f;
+}
+
+.banner h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.banner p {
+  margin: 1rem 0 0;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.button-custom {
+  display: inline-block;
+  margin: 1rem 0 0;
+  padding: 10px 20px;
+  background: #30292f;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 500;
+}
+
+.button-custom:hover {
+  background: #ff9100;
+  color: #30292f;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+footer .container {
   background-color: #30292f;
+  color: #fff;
+  padding: 10px;
 }
 
-.navbar .navbar-brand, .navbar .nav-link, .navbar .navbar-toggler-icon {
-  color: #E8E9F3;
+footer .container .footer-text {
+  padding-top: 5px;
 }
 
-.navbar .nav-link:hover {
-  color: #c9c5fd;
+@media (max-width: 1024px) {
+  .banner {
+    padding: 40px 0px;
+  }
 }
 
-.jumbotron {
-  background-color: #413f54;
-  color: #E8E9F3;
+@media (max-width: 768px) {
+  .banner {
+    padding: 50px 0px;
+  }
+  .banner h2 {
+    font-size: 2rem;
+    font-weight: 750;
+    text-transform: uppercase;
+  }
+  .banner p {
+    margin: 1rem 0 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
-footer {
-  background-color: #413f54;
-  padding: 20px;
-}
-
-footer .footer-text {
-  padding-top: 20px;
+@media (max-width: 500px) {
+  .navbar {
+    padding: 5px 0;
+  }
+  .navbar .navbar-brand {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #30292f;
+  }
+  .navbar .nav-item {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .banner {
+    padding: 40px 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

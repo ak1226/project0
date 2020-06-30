@@ -1,49 +1,161 @@
 $font-stack: Arial, Helvetica, sans-serif;
 $primary-color: rgb(48, 41, 47);
-$secondary-color: rgb(201, 197, 253);
-$tertiary-colour: rgb(65, 63, 84);
-$light-color: #E8E9F3;
-$primary-margin: 10px;
-$primary-padding: 10px;
-$div-padding: 20px;
-$footer-padding: 20px;
+$secondary-color: #fff;
+$tertiary-colour: #ff9100;
+$light-color: #b7b7b9;
 
 * {
     font-family: $font-stack;     
 }
 
 body {
-    color: $tertiary-colour;
+    color: $primary-color;
 }
 
-.bg-dark-custom {
-    background-color: $primary-color;
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
 
 .navbar {
-    background-color: $primary-color;
-    .navbar-brand, .nav-link, .navbar-toggler-icon{
-        color: $light-color;      
+    padding: 10px 0;
+    background-color: $secondary-color;
+    .navbar-brand {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: $primary-color;
     }
-    .nav-link:hover{
-        color: $secondary-color;      
-    } 
+    .nav-item {
+        margin-left: 30px;
+        font-weight: 500;
+        text-transform: uppercase;        
+    }    
 }
 
-.jumbotron {
-    background-color: $tertiary-colour;
+.navbar-light .navbar-nav .nav-item .nav-link{
     color: $light-color;
+    padding: 5px 15px;
+    border-bottom: 0.05rem solid $primary-color;
+}
+.navbar-light .navbar-nav .nav-item:hover .nav-link{
+    color: $primary-color;
+    font-weight: 550;
+    border-bottom: 0.15rem solid $primary-color;
+}
+.navbar-light .navbar-nav .nav-item.active .nav-link{
+    color: $primary-color;
+    font-weight: 550;
+    border-bottom: 0.15rem solid $primary-color;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    color: $secondary-color;
+    border-radius: 0;
+    outline: none;
+}
+
+.navbar-collapse {
+    background: #fff;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(../images/tiger.png);
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+    color: $primary-color;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.5rem;
+        font-weight: 750;        
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 1rem 0 0;
+        padding: 0;        
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
+
+.button-custom {
+    display: inline-block;
+    margin: 1rem 0 0;
+    padding: 10px 20px;
+    background: $primary-color;
+    color: $secondary-color;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 500;;
+}
+.button-custom:hover {    
+    background: $tertiary-colour;
+    color: $primary-color;
+    font-weight: 800;
+    text-decoration: none;    
 }
 
 footer {
-    background-color: $tertiary-colour;
-    padding: $footer-padding;
-    .footer-text {
-        padding-top: $footer-padding;
+    .container{
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 10px;
+        .footer-text {
+            padding-top: 5px;
+        }
+    }  
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        padding: 40px 0px;  
     }
 }
 
+@media (max-width: 768px) {
+    .banner {
+        padding: 50px 0px;    
+        h2 {
+            font-size: 2rem;
+            font-weight: 750;        
+            text-transform: uppercase;
+        }
+    
+        p {
+            margin: 1rem 0 0;
+            padding: 0;
+            font-size: 1rem;
+            line-height: 1.25rem;
+        }
+    }
+}
 
+@media (max-width: 500px) {
+    .navbar {
+        padding: 5px 0;   
+        .navbar-brand {
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            color: $primary-color;
+        }
+        .nav-item {
+            font-weight: 500;
+            text-transform: uppercase;        
+        }
+    }
+    .banner {
+        padding: 40px 0px;  
+    }
+}
 
 
 
